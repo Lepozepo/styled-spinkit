@@ -1,7 +1,6 @@
 import styled, { keyframes } from 'styled-components'
 import {
   sizePx,
-  propMargin,
   propBgColor,
   SizeProps,
   BgColorProps,
@@ -27,7 +26,6 @@ export const Child = styled.div<DelayProps>`
 
 export const StyledThreeBounce = styled.div<SizeProps & BgColorProps>`
   width: ${p => p.size}px;
-  ${propMargin};
   text-align: center;
   border-radius: 100%;
   > ${Child} {
